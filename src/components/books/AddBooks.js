@@ -34,12 +34,10 @@ const AddBooks = () => {
     if (title.trim() === '') {
       error = true;
       setTitleError('Please enter your title');
-    }
-    if (author.trim() === '') {
+    } else if (author.trim() === '') {
       error = true;
       setAuthorError('Please enter your author');
-    }
-    if (!error) {
+    } else if (!error) {
       const AddNewBook = {
         id: uuidv4(), title, author, category,
       };

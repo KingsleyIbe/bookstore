@@ -8,8 +8,9 @@ const Books = ({
 }) => {
   const dispatch = useDispatch();
   const handleDelete = () => {
-    dispatch(removeBook(id));
+    dispatch(removeBook(Books.id));
   };
+
   return (
     <div>
       <ul>
