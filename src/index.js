@@ -1,11 +1,10 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import ReactDOM from 'react-dom';
-import Header from './components/Header';
-import Books from './components/redux/books/books';
-// import AddBooks from './components/redux/books/AddBooks';
+import Header from './components/header/Header';
+import Books from './components/books/Books';
 
-import Categories from './components/redux/categories/categories';
+import Categories from './pages/Categories';
 
 ReactDOM.render(
   <React.StrictMode>

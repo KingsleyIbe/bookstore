@@ -1,11 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
-import { removeBook } from '../../actions/bookActions';
-import AddBooks from './AddBooks';
+import { removeBook } from '../../redux/actions/bookActions';
 
-const books = ({
-  id, author, title, category,
+const Books = ({
+  id, title, author, category,
 }) => {
   const dispatch = useDispatch();
   const handleDelete = () => {
@@ -33,10 +32,11 @@ const books = ({
   );
 };
 
-books.propTypes = {
+Books.propTypes = {
   id: PropTypes.string.isRequired,
-  author: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
+  author: PropTypes.string.isRequired,
   category: PropTypes.string.isRequired,
 };
-export default books;
+
+export default Books;
