@@ -4,10 +4,10 @@ import AddBooks from '../components/books/AddBooks';
 import Books from '../components/books/Books';
 
 const BookList = () => {
-  const books = useSelector((state) => state.books);
+  const books = useSelector((state) => state.bookReducer.books);
   return (
     <div>
-      <h2>List of Books</h2>
+      <h2>Available Books</h2>
       <ul>
         {books.map((book) => (
           <Books
