@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { v4 as uuidv4 } from 'uuid';
-import { addBook } from '../../redux/actions/bookActions';
+import { addBookApi } from '../../utils/booksApi';
 
 const AddBooks = () => {
   const [title, setTitle] = useState('');
@@ -42,7 +42,7 @@ const AddBooks = () => {
         id: uuidv4(), title, author, category,
       };
 
-      dispatch(addBook(AddNewBook));
+      dispatch(addBookApi(AddNewBook));
       setTitle('');
       setAuthor('');
       setCategory('');
