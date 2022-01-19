@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 const Header = () => (
   <header>
     <nav>
+      <h2>Bookstore CMS</h2>
       <ul>
         <li>
           <Link to="/">Books</Link>
