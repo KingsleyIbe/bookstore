@@ -6,6 +6,7 @@
 - Display a list of books.
 - Add a book.
 - Remove a selected book.
+
 The application was built using Javascript, React-Redux, SASS.
 
 ## Project Screenshot
@@ -61,7 +62,7 @@ To get a local copy up and running follow these simple example steps.
 
 Clone project, run in your terminal:
 
-```$ git clone https://github.com/KingsleyIbe/react-todos-app.git ```
+```$ git clone https://github.com/KingsleyIbe/bookstore.git ```
 
 Open the cloned project in your code editor and run:
 
