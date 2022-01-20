@@ -39,9 +39,9 @@ const AddBooks = () => {
       setAuthorError('Please enter your author');
     } else if (!error) {
       const AddNewBook = {
-        id: uuidv4(), title, author, category,
+        item_id: uuidv4(), title, author, category,
       };
-
+      console.log(AddNewBook);
       dispatch(addBookApi(AddNewBook));
       setTitle('');
       setAuthor('');

@@ -1,15 +1,16 @@
+/* eslint-disable camelcase */
 import React from 'react';
 import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
 import { removeBookApi } from '../../utils/booksApi';
 
 const Books = ({
-  id, title, author, category,
+  item_id, title, author, category,
 }) => {
   const dispatch = useDispatch();
 
-  const handleDelete = () => {
-    dispatch(removeBookApi(id));
+  const handleDelete = (item_id) => {
+    dispatch(removeBookApi(item_id));
   };
 
   return (
@@ -23,7 +24,7 @@ const Books = ({
             type="button"
             className="delBtn"
             onClick={() => {
-              handleDelete(id);
+              handleDelete(item_id);
             }}
           >
             Remove
@@ -35,7 +36,7 @@ const Books = ({
 };
 
 Books.propTypes = {
-  id: PropTypes.string.isRequired,
+  item_id: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   author: PropTypes.string.isRequired,
   category: PropTypes.string.isRequired,

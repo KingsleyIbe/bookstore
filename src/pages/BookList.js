@@ -18,11 +18,11 @@ const BookList = () => {
       <ul>
         {books.map((book) => (
           <Books
-            key={book.book_id}
+            key={book.item_id}
             title={book.title}
             author={book.author}
             chapter={`${progress()}`}
-            id={book.book_id}
+            id={book.item_id}
             category={book.category}
           />
         ))}

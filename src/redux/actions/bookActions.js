@@ -1,3 +1,4 @@
+/* eslint-disable camelcase */
 import { ADD_BOOK, REMOVE_BOOK, FETCH_BOOK } from './types';
 
 export const addBook = (payload) => ({
@@ -5,9 +6,9 @@ export const addBook = (payload) => ({
   payload,
 });
 
-export const removeBook = (id) => ({
+export const removeBook = (item_id) => ({
   type: REMOVE_BOOK,
-  payload: id,
+  payload: item_id,
 });
 
 export const fetchBook = (payload) => ({
