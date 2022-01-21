@@ -12,10 +12,6 @@ The application was built using Javascript, React-Redux, SASS.
 ## Project Screenshot
 ![screenshot](src/assets/images/screenShot.jpeg)
 
-## Live Video Demo
-![Video Demo](https://user-images.githubusercontent.com/43799727/149385939-29497e84-0056-4711-ab33-883373ed05c5..gif)
-
-
 ## Other Important Information
 ## Built With
 
