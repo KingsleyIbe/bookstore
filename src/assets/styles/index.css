@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato&family=Mochiy+Pop+P+One&family=Montserrat:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lato&family=Mochiy+Pop+P+One&family=Montserrat:wght@700&family=Roboto+Slab:wght@700&display=swap");
+
 *,
 *::after,
 *::before {
@@ -12,9 +13,11 @@ body {
   background-color: #fff;
   font-family: "Montserrat", serif;
 }
+
 body ul {
   list-style: none;
 }
+
 body a {
   text-decoration: none;
   color: #121212;
@@ -30,12 +33,14 @@ body a {
   margin: auto;
   padding: 1.438rem 6.188rem 1.688rem 6.25rem;
 }
+
 .nav-list .header-h1 {
   color: #0290ff;
   font-size: 1.8rem;
   font-weight: bold;
   font-family: "Montserrat", serif;
 }
+
 .nav-list div {
   margin-right: 100px;
 }
@@ -53,6 +58,7 @@ body a {
   margin-top: 30px;
   margin-bottom: 50px;
 }
+
 .form-container h1 {
   margin-left: 30px;
   margin-top: 10px;
@@ -65,6 +71,7 @@ body a {
   justify-content: space-around;
   margin-top: 10px;
 }
+
 .form-group .text-input {
   width: 41.5rem;
   height: 2.813rem;
@@ -73,6 +80,7 @@ body a {
   border-radius: 4px;
   border: solid 1px #f5f6fa;
 }
+
 .form-group .category {
   width: 40%;
   height: 2.813rem;
@@ -83,6 +91,7 @@ body a {
   color: #6e6e6e;
   cursor: pointer;
 }
+
 .form-group .addBtn {
   width: 40%;
   padding: 10px 0 10px 0;
@@ -102,19 +111,23 @@ body a {
   padding: 30px;
   border-radius: 4px;
 }
+
 .book-details-container .listItems .cat {
   color: #8f8c8c;
 }
+
 .book-details-container .listItems .title {
   color: #121212;
   font-family: "Roboto Slab", serif;
-  font-weight: 700px;
+  font-weight: bold;
 }
+
 .book-details-container .listItems .author {
   color: #4386bf;
   font-family: "Roboto Slab", serif;
-  font-weight: 300px;
+  font-weight: lighter;
 }
+
 .book-details-container .listItems .btn {
   color: #4386bf;
   padding: 2px;
@@ -123,29 +136,22 @@ body a {
   background-color: #fff;
   cursor: pointer;
 }
+
 .book-details-container .listItems .delbtn {
   margin-left: 20px;
   margin-right: 20px;
 }
-.book-details-container .progress-circle {
-  display: flex;
-  flex-direction: row;
-  gap: 20px;
-}
-.book-details-container .progress-circle .progress-text h2 {
-  color: #252525;
-}
-.book-details-container .progress-circle .progress-text h3 {
-  color: #b4b2b2;
-}
-.book-details-container .update-info h3 {
-  margin-bottom: 10px;
-  color: #b4b2b2;
-}
+
 .book-details-container .update-info h4 {
   margin-bottom: 10px;
   color: #252525;
 }
+
+.book-details-container .update-info h3 {
+  margin-bottom: 10px;
+  color: #b4b2b2;
+}
+
 .book-details-container .update-info .progress {
   background-color: #0290ff;
   padding: 10px;
@@ -153,4 +159,18 @@ body a {
   border-radius: 4px;
   color: #fff;
   cursor: pointer;
+}
+
+.book-details-container .progress-circle {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.book-details-container .progress-circle .progress-text h2 {
+  color: #252525;
+}
+
+.book-details-container .progress-circle .progress-text h3 {
+  color: #b4b2b2;
 }/*# sourceMappingURL=index.css.map */
