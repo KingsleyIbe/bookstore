@@ -9,7 +9,7 @@ const BookList = () => {
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(fetchBookApi());
-  }, [dispatch]);
+  }, []);
 
   const progress = () => Math.floor(Math.random() * 70);
   return (
@@ -18,11 +18,10 @@ const BookList = () => {
       <ul>
         {books.map((book) => (
           <Books
-            key={book.item_id}
+            key={book.id}
             title={book.title}
-            author={book.author}
             chapter={`${progress()}`}
-            id={book.item_id}
+            id={book.id}
             category={book.category}
           />
         ))}
