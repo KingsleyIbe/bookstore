@@ -2,6 +2,7 @@ import { Routes, Route } from 'react-router-dom';
 import Header from './components/header/Header';
 import Categories from './pages/Categories';
 import BookList from './pages/BookList';
+import './assets/styles/index.css';
 
 function App() {
   return (

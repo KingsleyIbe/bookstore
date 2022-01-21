@@ -11,18 +11,16 @@ const BookList = () => {
     dispatch(fetchBookApi());
   }, []);
 
-  const progress = () => Math.floor(Math.random() * 70);
   return (
-    <div>
-      <h2>Available Books</h2>
-      <ul>
+    <div className="book-container">
+      <ul className="book-list">
         {books.map((book) => (
           <Books
-            key={book.id}
-            title={book.title}
-            chapter={`${progress()}`}
-            id={book.id}
             category={book.category}
+            title={book.title}
+            key={book.id}
+            id={book.id}
+
           />
         ))}
       </ul>
