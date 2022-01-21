@@ -10,7 +10,7 @@ const AddBooks = () => {
 
   const dispatch = useDispatch();
 
-  const categories = ['Action', 'Science Fiction', 'Romance', 'Horror'];
+  const categories = ['Category', 'Action', 'Science Fiction', 'Romance', 'Economy', 'Technology'];
 
   const handleSubmitBtn = (e) => {
     e.preventDefault();
@@ -27,33 +27,31 @@ const AddBooks = () => {
   return (
     <div className="form-container">
       <form onSubmit={handleSubmitBtn}>
+        <h1>ADD NEW Book</h1>
         <div className="form-group">
-          <input
-            type="text"
-            placeholder="Enter name of title"
-            id="title"
-            onChange={(e) => setTitle(e.target.value)}
-            value={title}
-            required
-          />
-          <span>
-            {titleError}
-            {' '}
-          </span>
-        </div>
-        <select onChange={(e) => setCategory(e.target.value)} value={category}>
-          {
+          <div className="form-flex">
+            <input
+              className="text-input"
+              type="text"
+              placeholder="BOOK TITLE"
+              onChange={(e) => setTitle(e.target.value)}
+              value={title}
+              required
+            />
+            <span>
+              {titleError}
+              {' '}
+            </span>
+          </div>
+          <select className="category" onChange={(e) => setCategory(e.target.value)} value={category}>
+            {
             categories.map((category) => (
               <option key={category} value={category}>{category}</option>
             ))
           }
-        </select>
-        <button
-          type="submit"
-          className="addBtn"
-        >
-          Add Book
-        </button>
+          </select>
+          <button type="submit" className="addBtn"> ADD BOOK </button>
+        </div>
       </form>
     </div>
   );
