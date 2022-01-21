@@ -1,11 +1,16 @@
-import { ADD_BOOK, REMOVE_BOOK } from './types';
+import { ADD_BOOK, REMOVE_BOOK, FETCH_BOOK } from './types';
 
 export const addBook = (payload) => ({
   type: ADD_BOOK,
   payload,
 });
 
-export const removeBook = (id) => ({
+export const removeBook = (payload) => ({
   type: REMOVE_BOOK,
-  payload: id,
+  payload,
+});
+
+export const fetchBook = (payload) => ({
+  type: FETCH_BOOK,
+  payload,
 });

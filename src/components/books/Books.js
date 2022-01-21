@@ -1,15 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
-import { removeBook } from '../../redux/actions/bookActions';
+import { removeBookApi } from '../../utils/booksApi';
 
 const Books = ({
-  id, title, author, category,
+  id, title, category,
 }) => {
   const dispatch = useDispatch();
 
   const handleDelete = () => {
-    dispatch(removeBook(id));
+    dispatch(removeBookApi(id));
   };
 
   return (
@@ -17,7 +17,6 @@ const Books = ({
       <ul>
         <li className="listItems">
           <p>{title}</p>
-          <p>{author}</p>
           <p>{category}</p>
           <button
             type="button"
@@ -37,7 +36,6 @@ const Books = ({
 Books.propTypes = {
   id: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
-  author: PropTypes.string.isRequired,
   category: PropTypes.string.isRequired,
 };
 
